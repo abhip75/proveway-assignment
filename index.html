@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="main-card">
+            <h3 style="text-align: center;">YAY! It's BOGO</h3>
+            <div class="card" id="box1">
+                <div class="offer">
+                    <div class="offer-tag">30% Off</div>
+                    <label class="offer-label">
+                        <input type="radio" name="offer" value="buy1get2">
+                        <div class="offer-content">
+                            <p class="offer-title">Buy 1 Get 2</p>
+                            <p class="offer-price">$18.00 USD</p>
+                        </div>
+                    </label>
+                    <div class="content">
+                        <p>Select Color:</p>
+                        <button class="color-btn">Red</button>
+                        <button class="color-btn">Blue</button>
+                        <button class="color-btn">Green</button>
+                        <p>Select Size:</p>
+                        <button class="size-btn">Small</button>
+                        <button class="size-btn">Medium</button>
+                        <button class="size-btn">Large</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card" id="box2">
+                <div class="offer">
+                    <div class="offer-tag">30% Off</div>
+                    <label class="offer-label">
+                        <input type="radio" name="offer" value="buy2get4">
+                        <div class="offer-content">
+                            <p class="offer-title">Buy 2 Get 4</p>
+                            <p class="offer-price">$24.00 USD</p>
+                        </div>
+                        <span class="most-popular">Most Popular</span>
+                    </label>
+                    <div class="content">
+                        <p>Select Color:</p>
+                        <button class="color-btn">Red</button>
+                        <button class="color-btn">Blue</button>
+                        <button class="color-btn">Green</button>
+                        <p>Select Size:</p>
+                        <button class="size-btn">Small</button>
+                        <button class="size-btn">Medium</button>
+                        <button class="size-btn">Large</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card" id="box3">
+                <h3 style="text-align: center;">Box 3</h3>
+                <div class="content">
+                    <p>Select Color:</p>
+                    <button class="color-btn">Red</button>
+                    <button class="color-btn">Blue</button>
+                    <button class="color-btn">Green</button>
+                    <p>Select Size:</p>
+                    <button class="size-btn">Small</button>
+                    <button class="size-btn">Medium</button>
+                    <button class="size-btn">Large</button>
+                </div>
+            </div>
+            <div class="button">
+                <button class="add-button"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                document.querySelectorAll('.card').forEach(otherCard => {
+                    if (otherCard !== this) {
+                        otherCard.classList.remove('expanded');
+                    }
+                });
+                this.classList.toggle('expanded');
+            });
+        });
+    </script>
+</body>
+</html>
