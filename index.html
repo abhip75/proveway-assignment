@@ -11,10 +11,10 @@
 <body>
     <div class="container">
         <div class="main-card">
-            <h3 style="text-align: center;">YAY! It's BOGO</h3>
+            <h3 style="text-align: center;" class="header-main">YAY! It's BOGO</h3>
             <div class="card" id="box1">
                 <div class="offer">
-                    <div class="offer-tag">30% Off</div>
+                    <div class="offer-tag">30% <br/>Off</div>
                     <label class="offer-label">
                         <input type="radio" name="offer" value="buy1get2">
                         <div class="offer-content">
@@ -23,21 +23,48 @@
                         </div>
                     </label>
                     <div class="content">
-                        <p>Select Color:</p>
-                        <button class="color-btn">Red</button>
-                        <button class="color-btn">Blue</button>
-                        <button class="color-btn">Green</button>
-                        <p>Select Size:</p>
-                        <button class="size-btn">Small</button>
-                        <button class="size-btn">Medium</button>
-                        <button class="size-btn">Large</button>
+                        <label class="select-label">Size </label>
+                        <label class="select-label" style="margin-left: 57px;">Color </label>
+
+                        
+                        <div class="select-container">
+                            <label for="color-select">#1</label>
+                            <select id="color-select" class="select-input" style="margin-left: 3px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            
+
+                            <select id="size-select" class="select-input">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                            </select>
+                        </div>
+                       
+                        <div class="select-container">
+                            <label for="color-select-1">#2</label>
+                            <select id="color-select-1" class="select-input">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            
+                            <select id="size-select-1" class="select-input">
+                                <option value="Black">Color</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                            </select>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
     
             <div class="card" id="box2">
                 <div class="offer">
-                    <div class="offer-tag">30% Off</div>
+                    <div class="offer-tag">30% <br/>Off</div>
                     <label class="offer-label">
                         <input type="radio" name="offer" value="buy2get4">
                         <div class="offer-content">
@@ -47,35 +74,103 @@
                         <span class="most-popular">Most Popular</span>
                     </label>
                     <div class="content">
-                        <p>Select Color:</p>
-                        <button class="color-btn">Red</button>
-                        <button class="color-btn">Blue</button>
-                        <button class="color-btn">Green</button>
-                        <p>Select Size:</p>
-                        <button class="size-btn">Small</button>
-                        <button class="size-btn">Medium</button>
-                        <button class="size-btn">Large</button>
+                        <label class="select-label">Size</label>
+                        <label class="select-label" style="margin-left: 57px;">Color </label>
+                        
+                        <div class="select-container">
+                            <label for="color-select-2">#1</label>
+                            <select id="color-select-2" class="select-input" style="margin-left: 3px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            
+                            <select id="size-select-2" class="select-input">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                            </select>
+                        </div>
+                       
+                        <div class="select-container">
+                            <label for="color-select-3">#2</label>
+                            <select id="color-select-3" class="select-input">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            
+                            <select id="size-select-3" class="select-input">
+                                <option value="Black">Color</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
     
             <div class="card" id="box3">
-                <h3 style="text-align: center;">Box 3</h3>
-                <div class="content">
-                    <p>Select Color:</p>
-                    <button class="color-btn">Red</button>
-                    <button class="color-btn">Blue</button>
-                    <button class="color-btn">Green</button>
-                    <p>Select Size:</p>
-                    <button class="size-btn">Small</button>
-                    <button class="size-btn">Medium</button>
-                    <button class="size-btn">Large</button>
+                <div class="offer">
+                    <div class="offer-tag">30% <br/>Off</div>
+                    <label class="offer-label">
+                        <input type="radio" name="offer" value="buy1get2">
+                        <div class="offer-content">
+                            <p class="offer-title">Buy 1 Get 2 <span class="badge">12% Off</span></p>
+                            <p class="offer-price">$36.00 USD<span class="muted-price">$10.00 USD</span></p>
+                        </div>
+                    </label>
+                    <div class="content">
+                        <label class="select-label">Size</label>
+                        <label class="select-label" style="margin-left: 57px;">Color</label>
+                        
+                        <div class="select-container">
+                            <label for="color-select-4">#1</label>
+                            <select id="color-select-4" class="select-input" style="margin-left: 3px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            
+                            <select id="size-select-4" class="select-input">
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                            </select>
+                        </div>
+                       
+                        <div class="select-container">
+                            <label for="color-select-5">#2</label>
+                            <select id="color-select-5" class="select-input">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            
+                            <select id="size-select-5" class="select-input">
+                                <option value="Black">Color</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                            </select>
+                        </div>
+                    </div>
+                    
                 </div>
+            </div>
+            <div class="side-content">
+                <span class="side-text">Free Delivery</span>
+                <span class="side-total">Total: $18.00 USD</span>
             </div>
             <div class="button">
                 <button class="add-button"><i class="fa-solid fa-plus"></i> Add to Cart</button>
             </div>
+
+                
+            <div class="footer">
+                <p class="power-price">Powered by <span class="text-pumper">Pumper</span></p>
+            </div>
         </div>
+
     </div>
 
     <script>
