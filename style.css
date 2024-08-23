@@ -290,13 +290,13 @@ body {
 }
 
 .side-text {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
     color:#FF6B6B;
 }
 
 .side-total {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 600;
     color: #333;
     margin-left: 109px;
